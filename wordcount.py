@@ -21,8 +21,10 @@ for line in open(filename):
         word_stripped = strip_punctuation(word)
         words_frequency[word_stripped] = words_frequency.get(word_stripped, 0) + 1
 
+## Print the dictionary - unordered
 # for word, count in words_frequency.items():
 #     print(f'{word} {count}')
 
+## Print the dictionary - alphabetically
 for word in sorted(words_frequency):
     print(f'{word} {words_frequency[word]}')
